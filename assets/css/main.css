@@ -1,0 +1,880 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800"); /*подключаем шрифты*/
+@import url("https://fonts.googleapis.com/css?family=Poiret+One");
+
+
+html, body, img {
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+}
+
+a,a:hover {
+	text-decoration: none;
+	cursor:pointer;
+}
+
+h2 {
+	font-size: 3em;
+	font-family: "Poiret One";
+	letter-spacing: 0.1em;
+	color: rgba(0, 0, 0, 0.95);
+	text-transform: uppercase;
+	margin-bottom: 0.5em;
+}
+
+h3 {
+	font-size: 1em;
+	line-height: 1.1;
+	font-family: "Poiret One";
+	letter-spacing: 0.2em;
+	color: rgba(255, 255, 255, 0.95);
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 1.3;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	color: rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 576px) {
+		h2 {
+			font-size: 2em;
+			font-family: "Poiret One";
+			letter-spacing: 0.1em;
+			color: rgba(0, 0, 0, 0.95);
+			text-transform: uppercase;
+			margin-bottom: 0.5em;
+			text-align: center;
+		}
+
+		h3 {
+			font-size: 1em;
+			line-height: 1.1;
+			font-family: "Poiret One";
+			letter-spacing: 0.2em;
+			color: rgba(255, 255, 255, 0.95);
+			text-transform: uppercase;
+		}
+
+		p {
+			font-size: 1em;
+			line-height: 1.3;
+			font-family: "Open Sans", sans-serif;
+			font-weight: 200;
+			color: rgba(0, 0, 0, 0.75);
+		}
+}
+
+header img { 
+	width:30px; 
+}
+
+/*------------------------МЕНЮ НАВИГАЦИИ------------------------*/	
+
+.main_h {
+	position: fixed;
+	max-height: 50px;
+	z-index: 999;
+	width: 100%;
+	padding-top: 12px;
+	background: none;
+	overflow: hidden;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	opacity: 0;
+	top: -100px;
+	padding-bottom: 6px;
+}
+
+		.main_h .row {
+			width: 100%;
+			margin: 0 auto;
+			position: relative;
+			padding: 0 2%;
+		}
+
+.contactlinks {
+	position: absolute;
+	text-align: right;
+	width: 100px;
+	right:5%;
+	bottom:-5px;
+	margin-right: 0;
+	font-size: 1em;
+	font-family: "Poiret One";
+	letter-spacing: 0.25em;
+}
+
+
+		.inner .icon.round {
+			border-radius: 100%;
+			height: 20px;
+			width: 20px;
+			color: #888888;
+			-webkit-transition: all 200ms ease-in;
+			-moz-transition: all 200ms ease-in;
+			transition: all 200ms ease-in;
+		}
+
+		.inner .icon.round:hover {
+			color:black;
+		}
+
+		ul.icons {
+			overflow: hidden;
+			cursor: default;
+			list-style: none;
+			padding-left: 0;
+		}
+
+		ul.icons li {
+			display: inline-block;
+			padding-right:20px; 
+			font-size: 1.5em;
+		}
+
+		ul.icons li:last-child {
+			padding-right:0;
+		}
+
+
+.icon {
+	position: relative;
+	font-family: FontAwesome;
+}
+
+		.icon > .label {
+			display: none; 
+		}
+
+@media only screen and (max-width: 1200px) {
+	.contactlinks {
+		position: relative;
+		text-align: center;
+		font-size: 0.8em;
+		width:100%;
+		margin-left: 10%;
+	}
+
+}
+
+.mobile-toggle {
+	display: none;
+	cursor: pointer;
+	font-size: 20px;
+	position: absolute;
+	right: 22px;
+	top: -10px;
+	width: 30px;
+	-webkit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+}
+
+		.mobile-toggle span {
+			width: 30px;
+			height: 4px;
+			margin-bottom: 6px;
+			border-radius: 1000px;
+			background: #8f8f8f;
+			display: block;
+		}
+
+nav {
+	float: center;
+	width: 100%;
+}
+
+
+		nav a{
+			-webkit-transition: all 500ms ease-in;
+		 	-moz-transition: all 500ms ease-in;
+		  	transition: all 500ms ease-in;
+		  	color: #888888;
+			text-transform: uppercase;
+			font-size: 1em;
+		}
+
+		nav a:hover, nav a.active{
+			color:black;
+			border-bottom: 0.5px solid black;
+			padding-bottom:5px;
+		}
+
+		nav ul {
+			list-style: none;
+			font-size: 0.8em;
+			overflow: hidden;
+			font-family: "Poiret One";
+			letter-spacing: 0.25em;
+			color: rgba(255, 255, 255, 0.95);
+			font-weight: 800;
+		 }
+
+		nav ul li {
+			display: inline-block;
+			margin-left: 35px;
+			line-height: 2;
+
+		}
+
+		nav ul li:first-child {
+			margin-left: 0;
+		}
+
+.open-nav {
+	max-height: 500px !important;
+}
+
+		.open-nav .mobile-toggle {
+			transform: rotate(-90deg);
+			-webkit-transform: rotate(-90deg);
+		}
+
+.sticky {
+	background-color: #fff;
+	opacity: 1;
+	top: 0px;
+	border-bottom: 1px solid gainsboro;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+		.main_h {
+			padding-top: 25px;
+		}
+
+		nav {
+	    	width: 100%;
+	  	}	
+
+	  	nav ul {
+		    padding-top: 40px;
+		    margin-bottom: 22px;
+		    text-align: center;
+		    width: 100%;
+		}
+
+		nav ul li {
+		    width: 100%;
+		    padding: 7px 0;
+		    margin-left: -80px;
+		    margin-right: -40px;
+		    border-top: 1px solid gainsboro;
+		}
+
+	  	nav ul li:first-child {
+	  		margin-left: -80px;
+	  		margin-right: -40px;
+	  		border-top: 1px solid transparent;
+		}
+
+		.mobile-toggle {
+	    	display: block;
+		}
+}
+
+
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+
+/*------------------------БАННЕР------------------------*/	
+.bg-img {
+    background-size: 100%; 
+    background-color: #fff;
+}
+
+#banner {
+	background-image: url("../../images/banneringrid.jpg");	
+	align-items: center; 
+	display: flex; 
+	justify-content: center; 
+	background-position: center;
+	background-size: cover; 
+	background-attachment: fixed; 
+	min-height: 70vh; 
+}
+
+#banner:after{
+	content:'';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+}
+
+		#banner h2 { 
+			font-size: 4.5em;
+			font-weight: 500;
+			margin: 0;
+			font-family: "Poiret One";
+			letter-spacing: 0.1em;
+			color: rgba(255, 255, 255);
+		}
+
+
+		#banner h1 { 
+			font-size: 1.2em;
+			font-family: "Poiret One";
+			letter-spacing: 0.25em;
+			color: rgba(255, 255, 255);
+			font-weight: 500;
+		}
+
+		#banner h3 { 
+			font-size: 1.2em;
+			font-family: "Poiret One";
+			letter-spacing: 0.3em;
+			color: rgba(255, 255, 255, 0.95);
+		}
+
+		#banner .spb {
+			font-size: 0.8em;
+			font-weight: 500;
+		}
+
+		#banner img{
+			width:0.7em;
+			padding-bottom: 5px;
+		}
+
+.title { 
+	text-align: center;
+	position: relative; 
+	right: 25%;
+	width: 50%;
+	z-index: 5;
+}
+
+.borderr {
+	padding: 1em 0.6em;
+	border: 1px solid white;
+	display:inline-block;
+	margin: 1em;
+	-webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+}
+
+.borderr:hover {
+	border: 1px solid transparent;
+	cursor: pointer;
+
+}
+
+@media (max-width: 576px) {
+		.title { 
+			left: 0;
+			width: 90%;
+		}
+
+		#banner h2 { 
+			font-size: 2.7em;
+			font-weight: 500;
+			margin: 0;
+			font-family: "Poiret One";
+			letter-spacing: 0.1em;
+			color: rgba(255, 255, 255);
+		}
+
+
+		#banner h1 { 
+			font-size: 1em;
+			font-family: "Poiret One";
+			letter-spacing: 0.25em;
+			color: rgba(255, 255, 255);
+			font-weight: 500;
+		}
+
+		#banner h3 { 
+			font-size: 1em;
+		}
+}
+/*--------------------ГЛАВНАЯ--------------------*/
+
+.post {	
+	align-items: center; 
+	display: flex; 
+	justify-content: center; 
+	background-position: center;
+	background-size: cover; 
+	background-attachment: scroll; 
+	position: relative; 
+	overflow: hidden; 
+	/*min-height: 100vh;*/
+}
+
+
+.description {
+	width:90%;
+	padding: 75px 0;
+}
+
+		.description p span {
+			letter-spacing: 1pt;
+			color: #000;
+		}
+
+	
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+
+
+#slider{
+	width:100%;
+	overflow:hidden;
+	padding:0;
+	margin-top: 1em;
+}
+
+#slider:hover{
+	cursor:pointer;
+}
+
+#one img {
+	width: 100%;
+}
+
+.morephotos{
+	margin-top: 20px;
+	font-size: 1em;
+	line-height: 1.1;
+	font-family: "Poiret One";
+	letter-spacing: 0.2em;
+	color: rgba(255, 255, 255);
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.morephotos a{
+	color: black;
+	padding: 10px 5px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	-webkit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+}
+
+		.morephotos a:hover{
+			border-top: 1px solid transparent;
+			border-bottom: 1px solid transparent;
+		}
+
+
+
+/*-----------------------ОТЗЫВЫ--------------------*/
+
+#two {
+	background-image: url("../../images/tea1.jpg");
+	background-attachment: fixed; 
+}
+
+#two:after{
+	content:'';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+}
+
+		#two h2 {
+			color: rgba(255, 255, 255, 0.95);
+		}
+
+		#two a{ 
+			padding:10px 5px; 
+			border-top: 1px solid white;
+			border-bottom: 1px solid white;
+			color:white;
+			-webkit-transition: all 200ms ease-in;
+			-moz-transition: all 200ms ease-in;
+			transition: all 200ms ease-in;
+		}
+
+		#two a:hover{ 
+			border-top: 1px solid transparent;
+			border-bottom: 1px solid transparent;
+		}
+
+		#two span{
+			font-size: 1em;
+			line-height: 1.1;
+			font-family: "Poiret One";
+			letter-spacing: 0.2em;
+			color: rgba(255, 255, 255, 0.95);
+			text-transform: uppercase;
+		}
+
+.reviews {
+	text-align: center;
+	width: 90%;
+	padding-top: 75px;
+	z-index: 2;
+}
+
+
+.review{ 
+	background-color: #fff;
+	border-radius: 2%;
+	margin-bottom: 75px;
+	margin-top: 20px;
+	padding-left: 50px; 
+	padding-right: 50px;
+	padding-bottom: 20px; 
+}
+
+		.review p{
+			line-height: 1.5;
+			margin-top: 20px;
+			font-size: 0.8em;
+			font-weight: 300;
+		}
+
+		.review img{ 
+			width: 120px;
+			height: auto;
+			margin-top: 30px;
+			border-radius: 50%; 
+			border: 1px solid #aaa;
+		}
+
+@media (max-width: 576px) {
+	.reviews {
+		width: 80%;
+	}
+
+	.review{ 
+		padding-left: 20px; 
+		padding-right: 20px;
+	} 
+
+	#two span{
+			font-size: 0.8em;
+		}
+
+	.morephotos{
+		font-size: 0.8em;
+	}
+}
+
+/*---------------------ЦЕНЫ------------------------*/
+
+.prices {
+	width:90%;
+	padding-top: 75px;
+	padding-bottom: 20px;
+	text-align: center;
+
+} 
+
+		#three img {
+			width: 100%;
+		}
+
+		#three .leftimg{
+			text-align: center;
+		}
+
+		#three .center {
+			text-align: left;
+		}
+
+.row {
+ 	display: flex;
+}
+
+		.row .row > div{
+			flex: 1;
+		}
+
+		.row .row > div{
+			border-left: 0.5px solid lightgrey;
+		}
+
+		.row .row > div:last-child{
+			border-right: 0.5px solid lightgrey;
+		}
+
+		.bold p {
+			font-weight: 500;
+		}
+
+		
+
+@media (max-width: 576px) {
+	.bold p {
+		font-size: 0.8em;
+	}
+
+	#three .table {
+		width:90%;
+		margin-left: 5%;
+	}
+
+	#three .center {
+		margin-bottom: 55px;
+	}
+
+
+}
+
+@media (min-width: 1280px) {
+	#three .center {
+		background-image: url("../../images/paint4.png");	
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: 30%; 
+		padding-bottom: 55px;
+		/*margin-bottom: 55px;*/
+		margin-right: 100px;
+	}
+
+	#three .leftimg{
+		text-align: left;
+	}
+
+	#three img {
+		width: 80%;
+	}
+}
+
+
+/*----------------------------НАЧИНКИ---------------------------*/
+
+#four{
+	background-image: url("../../images/shokolad.jpg");
+	background-attachment: fixed; 
+}
+
+#four:after{
+	content:'';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+}
+
+.inside {
+	text-align: center;
+	width: 90%;
+	padding: 75px 0;
+	z-index: 2;
+	line-height: 1.3;
+}
+
+		#four h2 {
+			color: rgba(255, 255, 255, 0.95);
+		}
+
+		#four span {
+			font-size: 1em;
+			font-weight: 600;
+			line-height: 1.3;
+			font-family: "Poiret One";
+			letter-spacing: 0.3em;
+			color: rgba(0, 0, 0, 0.95);
+			text-transform: uppercase;
+		}
+
+
+.taste{ 
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 5px;
+	padding: 1em 1em;
+	margin: 1em;
+}
+
+
+.cupcake {
+	margin-left: 0; 
+	width:100%;
+	float:left;  
+	margin-top: 1em;  
+}
+
+.fill {
+	margin-top: 1em;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 5px;
+	padding: 2.5%;
+	margin-bottom: 1em;
+}
+
+
+@media (max-width: 768px) {
+
+	.inside {
+		padding-bottom: 0;
+	}
+
+	#four span {
+		font-size: 0.8em;
+	}
+
+	#four p {
+		font-size: 0.8em;
+	}
+	
+	.cupcake {
+		width:90%;
+		margin-left:5%;
+		align-content: center;
+	}
+
+	.fill:last-child {
+		margin-bottom: 75px;
+	}
+}
+
+
+
+/*-------------------------ДИЗАЙН-------------------------*/
+
+.design {
+	text-align: left;
+	width:90%;
+	padding: 75px 0;
+	left:0;
+}
+
+.design img{
+			right:0;
+			margin-right: 5%;
+			width:100%;
+			padding:0;
+			margin-top: 1em;
+}
+
+
+#five .bol {
+	font-weight: 400;
+	line-height: 1.4;
+	color: rgba(0, 0, 0, 0.85);
+	text-transform: none;
+	border-left: 2px solid gray;
+	padding-left: 20px;
+	margin-left: -20px;
+}
+
+/*-------------------------ДОСТАВКА-------------------------*/
+
+#six{
+	background-image: url("../../images/bake.jpg");
+	background-attachment: fixed; 
+}
+
+#six:after{
+	content:'';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+}
+
+.dostavka{
+	width: 90%;
+	padding: 75px 0;
+	text-align: right;
+	z-index: 2;
+}
+
+		#six .dostavka span {
+			font-size: 1.5em;	
+			line-height: 1.3;
+			font-family: "Poiret One";
+			letter-spacing: 0.3em;	
+			color: white;
+			text-transform: uppercase;
+			margin: 0;
+		}
+
+		.dostavka p {
+			text-align: left;
+			line-height: 1.3;
+			font-family: "Open Sans", sans-serif;
+			font-weight: 300;
+			border: 2px solid white;
+			border-left: 10px solid white;
+			padding: 2% 0;
+			padding-left: 1em;
+			margin:0;
+		}
+
+		.dostavka div div{
+			border-radius: 5px;
+			margin: 10px 0;
+		}
+
+				.dostavka div div>p{
+					background-color: rgba(255, 255, 255, 0.7);
+				}
+
+@media (max-width: 768px) {
+	.dostavka span {
+		font-size: 1em;
+	}
+	.dostavka {
+		text-align: center;
+	}
+	.dostavka p {
+		border-left: 2px solid white;
+	}
+}
+
+
+
+/*------------------------------FOOTER-------------------------------*/
+
+#footer {
+	background-color: white;
+	color: black;
+	padding: 10px 0;
+}
+
+
+		.inner .copyright {
+			color: rgba(0, 0, 0, 0.5);
+			font-size: 1em;
+			padding: 0;
+			padding-top: 10px;
+			text-align: center;
+		}
