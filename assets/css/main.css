@@ -327,6 +327,12 @@ nav {
 	min-height: 70vh; 
 }
 
+@media only screen and (max-width: 1200px) {
+	#banner {
+		background-attachment:scroll;
+	}
+}
+
 #banner:after{
 	content:'';
 	position: absolute;
@@ -508,6 +514,12 @@ nav {
 	background-attachment: fixed; 
 }
 
+@media only screen and (max-width: 1200px) {
+	#two {
+		background-attachment:scroll;
+	}
+}
+
 #two:after{
 	content:'';
 	position: absolute;
@@ -685,6 +697,12 @@ nav {
 	background-attachment: fixed; 
 }
 
+@media only screen and (max-width: 1200px) {
+	#four {
+		background-attachment:scroll;
+	}
+}
+
 #four:after{
 	content:'';
 	position: absolute;
@@ -800,6 +818,12 @@ nav {
 #six{
 	background-image: url("../../images/bake.jpg");
 	background-attachment: fixed; 
+}
+
+@media only screen and (max-width: 1200px) {
+	#six {
+		background-attachment:scroll;
+	}
 }
 
 #six:after{
