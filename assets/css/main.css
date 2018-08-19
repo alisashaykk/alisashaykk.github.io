@@ -15,66 +15,6 @@ a,a:hover {
 	cursor:pointer;
 }
 
-h2 {
-	font-size: 3em;
-	font-family: "Poiret One";
-	letter-spacing: 0.1em;
-	color: rgba(0, 0, 0, 0.95);
-	text-transform: uppercase;
-	margin-bottom: 0.5em;
-}
-
-h3 {
-	font-size: 1em;
-	line-height: 1.1;
-	font-family: "Poiret One";
-	letter-spacing: 0.2em;
-	color: rgba(255, 255, 255, 0.95);
-	text-transform: uppercase;
-}
-
-p {
-	font-size: 1.2em;
-	line-height: 1.3;
-	font-family: "Open Sans", sans-serif;
-	font-weight: 300;
-	color: rgba(0, 0, 0, 0.75);
-}
-
-@media (max-width: 576px) {
-		h2 {
-			font-size: 2em;
-			font-family: "Poiret One";
-			letter-spacing: 0.1em;
-			color: rgba(0, 0, 0, 0.95);
-			text-transform: uppercase;
-			margin-bottom: 0.5em;
-			text-align: center;
-		}
-
-		h3 {
-			font-size: 1em;
-			line-height: 1.1;
-			font-family: "Poiret One";
-			letter-spacing: 0.2em;
-			color: rgba(255, 255, 255, 0.95);
-			text-transform: uppercase;
-		}
-
-		p {
-			font-size: 1em;
-			line-height: 1.3;
-			font-family: "Open Sans", sans-serif;
-			font-weight: 200;
-			color: rgba(0, 0, 0, 0.75);
-		}
-}
-
-header img { 
-	width:30px; 
-}
-
-
 /*------------------------БАННЕР------------------------*/	
 .bg-img {
     background-size: 100%; 
@@ -190,6 +130,69 @@ header img {
 			font-size: 1em;
 		}
 }
+
+/*------------------------ОБЩИЕ СТИЛИ ЗАГОЛОВКОВ------------------------*/	
+h2 {
+	font-size: 3em;
+	font-family: "Poiret One";
+	letter-spacing: 0.1em;
+	color: rgba(0, 0, 0, 0.95);
+	text-transform: uppercase;
+	margin-bottom: 0.5em;
+}
+
+h3 {
+	font-size: 1em;
+	line-height: 1.1;
+	font-family: "Poiret One";
+	letter-spacing: 0.2em;
+	color: rgba(255, 255, 255, 0.95);
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 1.3;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	color: rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 576px) {
+		h2 {
+			font-size: 2em;
+			font-family: "Poiret One";
+			letter-spacing: 0.1em;
+			color: rgba(0, 0, 0, 0.95);
+			text-transform: uppercase;
+			margin-bottom: 0.5em;
+			text-align: center;
+		}
+
+		h3 {
+			font-size: 1em;
+			line-height: 1.1;
+			font-family: "Poiret One";
+			letter-spacing: 0.2em;
+			color: rgba(255, 255, 255, 0.95);
+			text-transform: uppercase;
+		}
+
+		p {
+			font-size: 1em;
+			line-height: 1.3;
+			font-family: "Open Sans", sans-serif;
+			font-weight: 200;
+			color: rgba(0, 0, 0, 0.75);
+		}
+}
+/*
+header img { 
+	width:30px; 
+}*/
+
+
+
 /*------------------------МЕНЮ НАВИГАЦИИ------------------------*/	
 
 .main_h {
@@ -895,7 +898,7 @@ nav {
 
 
 		.inner .copyright {
-			color: rgba(0, 0, 0, 0.5);
+			color: rgba(0, 0, 0, 0.3);
 			font-size: 1em;
 			padding: 0;
 			padding-top: 10px;
