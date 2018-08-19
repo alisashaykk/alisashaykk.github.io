@@ -48,11 +48,11 @@ a,a:hover {
 
 		#banner h2 { 
 			font-size: 4.5em;
-			font-weight: 500;
 			margin: 0;
 			font-family: "Poiret One";
 			letter-spacing: 0.1em;
 			color: rgba(255, 255, 255);
+			font-weight: 500;
 		}
 
 
