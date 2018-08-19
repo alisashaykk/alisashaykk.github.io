@@ -74,6 +74,122 @@ header img {
 	width:30px; 
 }
 
+
+/*------------------------БАННЕР------------------------*/	
+.bg-img {
+    background-size: 100%; 
+    background-color: #fff;
+}
+
+#banner {
+	background-image: url("../../images/banneringrid.jpg");	
+	align-items: center; 
+	display: flex; 
+	justify-content: center; 
+	background-position: center;
+	background-size: cover; 
+	background-attachment: fixed; 
+	min-height: 70vh; 
+}
+
+@media only screen and (max-width: 1200px) {
+	#banner {
+		background-attachment:scroll;
+	}
+}
+
+#banner:after{
+	content:'';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+}
+
+		#banner h2 { 
+			font-size: 4.5em;
+			font-weight: 500;
+			margin: 0;
+			font-family: "Poiret One";
+			letter-spacing: 0.1em;
+			color: rgba(255, 255, 255);
+		}
+
+
+		#banner h1 { 
+			font-size: 1.2em;
+			font-family: "Poiret One";
+			letter-spacing: 0.25em;
+			color: rgba(255, 255, 255);
+			font-weight: 500;
+		}
+
+		#banner h3 { 
+			font-size: 1.2em;
+			font-family: "Poiret One";
+			letter-spacing: 0.3em;
+			color: rgba(255, 255, 255, 0.95);
+		}
+
+		#banner .spb {
+			font-size: 0.8em;
+			font-weight: 500;
+		}
+
+		#banner img{
+			width:0.7em;
+			padding-bottom: 5px;
+		}
+
+		#banner a {
+			color: white;
+		}
+
+.title { 
+	text-align: center;
+	position: relative; 
+	right: 25%;
+	width: 50%;
+	z-index: 5;
+}
+
+.borderr {
+	padding: 1em 0.6em;
+	border: 1px solid white;
+	display:inline-block;
+	margin: 1em;
+	-webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+}
+
+.borderr:hover {
+	border: 1px solid transparent;
+	cursor: pointer;
+
+}
+
+@media (max-width: 576px) {
+		.title { 
+			left: 0;
+			width: 90%;
+		}
+
+		#banner h2 { 
+			font-size: 2.7em;
+			letter-spacing: 0.1em;
+		}
+
+
+		#banner h1 { 
+			font-size: 1em;
+			letter-spacing: 0.25em;
+		}
+
+		#banner h3 { 
+			font-size: 1em;
+		}
+}
 /*------------------------МЕНЮ НАВИГАЦИИ------------------------*/	
 
 .main_h {
@@ -310,124 +426,7 @@ nav {
 }
 
 
-/*------------------------БАННЕР------------------------*/	
-.bg-img {
-    background-size: 100%; 
-    background-color: #fff;
-}
 
-#banner {
-	background-image: url("../../images/banneringrid.jpg");	
-	align-items: center; 
-	display: flex; 
-	justify-content: center; 
-	background-position: center;
-	background-size: cover; 
-	background-attachment: fixed; 
-	min-height: 70vh; 
-}
-
-@media only screen and (max-width: 1200px) {
-	#banner {
-		background-attachment:scroll;
-	}
-}
-
-#banner:after{
-	content:'';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: rgba(0,0,0,0.4);
-}
-
-		#banner h2 { 
-			font-size: 4.5em;
-			font-weight: 500;
-			margin: 0;
-			font-family: "Poiret One";
-			letter-spacing: 0.1em;
-			color: rgba(255, 255, 255);
-		}
-
-
-		#banner h1 { 
-			font-size: 1.2em;
-			font-family: "Poiret One";
-			letter-spacing: 0.25em;
-			color: rgba(255, 255, 255);
-			font-weight: 500;
-		}
-
-		#banner h3 { 
-			font-size: 1.2em;
-			font-family: "Poiret One";
-			letter-spacing: 0.3em;
-			color: rgba(255, 255, 255, 0.95);
-		}
-
-		#banner .spb {
-			font-size: 0.8em;
-			font-weight: 500;
-		}
-
-		#banner img{
-			width:0.7em;
-			padding-bottom: 5px;
-		}
-
-.title { 
-	text-align: center;
-	position: relative; 
-	right: 25%;
-	width: 50%;
-	z-index: 5;
-}
-
-.borderr {
-	padding: 1em 0.6em;
-	border: 1px solid white;
-	display:inline-block;
-	margin: 1em;
-	-webkit-transition: all 300ms ease-in;
-    -moz-transition: all 300ms ease-in;
-    transition: all 300ms ease-in;
-}
-
-.borderr:hover {
-	border: 1px solid transparent;
-	cursor: pointer;
-
-}
-
-@media (max-width: 576px) {
-		.title { 
-			left: 0;
-			width: 90%;
-		}
-
-		#banner h2 { 
-			font-size: 2.7em;
-			font-weight: 500;
-			margin: 0;
-			font-family: "Poiret One";
-			letter-spacing: 0.1em;
-			color: rgba(255, 255, 255);
-		}
-
-
-		#banner h1 { 
-			font-size: 1em;
-			font-family: "Poiret One";
-			letter-spacing: 0.25em;
-			color: rgba(255, 255, 255);
-			font-weight: 500;
-		}
-
-		#banner h3 { 
-			font-size: 1em;
-		}
-}
 /*--------------------ГЛАВНАЯ--------------------*/
 
 .post {	
